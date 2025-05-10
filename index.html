@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCatify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ARCatify</h1>
+        <button id="startAR" class="start-button">Start AR Experience</button>
+    </div>
+
+    <div id="arView" class="ar-view hidden">
+        <video id="camera" autoplay playsinline></video>
+        <canvas id="overlay"></canvas>
+        <button id="exitAR" class="exit-button">Exit AR</button>
+        <div class="controls">
+            <button id="toggleMusic" class="music-button">🔊</button>
+            <button id="takePhoto" class="photo-button">📸</button>
+            <button id="toggleCamera" class="camera-button">🔄</button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="C:\Users\vetdr\Documents\AR_project\funny-cat-meow-sound-effect-1-333768.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="catSound">
+        <source src="C:\Users\vetdr\Documents\AR_project\funny-cat-meow-sound-effect-1-333768.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+    <script src="ar.js"></script>
+</body>
+</html> 

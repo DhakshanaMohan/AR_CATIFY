@@ -1,0 +1,12 @@
+{
+  "name": "ar-eye-coolers",
+  "version": "1.0.0",
+  "description": "AR application that displays coolers over user's eyes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+} 
